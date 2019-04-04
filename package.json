@@ -1,0 +1,52 @@
+{
+  "name": "nightwatch",
+  "version": "1.0.24",
+  "description": "nightwatch project",
+  "main": "index.js",
+  "engines": {
+    "node": "4.4.6"
+  },
+  "scripts": {
+    "test-stage": "./node_modules/.bin/nightwatch --config nightwatch.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Sean M",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "geckodriver": "^1.11.0",
+    "local": "^0.3.3",
+    "nightwatch": "^0.9.9",
+    "random-number": "0.0.9",
+    "saucelabs": "^1.3.0",
+    "selenium-download": "^2.0.7"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.7.13",
+    "chromedriver": "2.42.0",
+    "env2": "^2.1.1",
+    "mime-types": "^2.1.13",
+    "nodemon": "^1.11.0",
+    "selenium-server": "^3.8.1"
+  },
+  "keywords": [
+    "nightwatch",
+    "testing",
+    "front-end",
+    "UI",
+    "browser",
+    "test",
+    "testing",
+    "step-by-step tutorial",
+    "how to",
+    "User Acceptance Testing",
+    "UAT"
+  ]
+}

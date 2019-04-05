@@ -1,10 +1,7 @@
-/*
-  This file empasses the logic for common/reusable methods and selectors this file tends to change
-  and is never set in stone.
-*/
+/* Shared and Common Methods Go Here */
 
-// Logic for activiating the various blocks.
-  function addTextBlock() {
+
+function addTextBlock() {
     this.api.pause(2000);
     return this.waitForElementVisible('@textBlockIcon', 7000)
       .click('@textBlockIcon')
@@ -16,7 +13,6 @@
         .click('@phoneButtonIcon')
   }
 
-
   // Submit Methods
   function submitTextBlock() {
     this.api.pause(2000);
@@ -26,7 +22,6 @@
   }
 
   // Other Blocks Methods
-
   function fillPhoneBlockFieldsAndSubmit() {
     return this.waitForElementVisible("@genericBlockLabel")
       .setValue("@genericBlockLabel", 'Phone Number Yo!')

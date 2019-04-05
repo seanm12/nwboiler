@@ -1,7 +1,3 @@
-/*
-  This file empasses the logic for both explore/workspace and SOME surrounding functionality.
-*/
-
 const common = require('./common.js')
 const nav_common = require('./nav_common.js')
 var rn = require('random-number');

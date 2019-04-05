@@ -13,17 +13,16 @@ module.exports = {
             login_page.navigate()
             login_page.doLogin(); 
 
-            var dashboard_page = browser.page.dashboard_page();
-            dashboard_page
+            var examplePageOne = browser.page.examplePageOne();
+            examplePageOne
                 .doClickEditGroupAppButton()
 
-            var group_app_page = browser.page.group_app_page()
-
-            group_app_page.doActivateAboutPage()
-            group_app_page.doaddPhoneButtonBlock()
+            var examplePageTwo = browser.page.examplePageTwo()
+            examplePageTwo.doActivateAboutPage()
+            examplePageTwo.doaddPhoneButtonBlock()
     
-            group_app_page.waitForElementVisible('.custom-page-feature-block', 10000)
-            group_app_page.assert.elementPresent(".custom-page-feature-block");
+            examplePageTwo.waitForElementVisible('.custom-page-feature-block', 10000)
+            examplePageTwo.assert.elementPresent(".custom-page-feature-block");
             
 
         browser.saveScreenshot(conf.imgpath(browser) + 'valid_login_test.png')
